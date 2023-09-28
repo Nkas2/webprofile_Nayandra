@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&display=swap");
+
+body {
+  background: #000;
+  color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Oxanium", cursive;
+}
+
+/* navbar */
+nav {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.logo > img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo > p {
+  color: #777;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.logo > p:hover {
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.navigation {
+  display: flex;
+  gap: 30px;
+}
+
+.navigation .navigation-item {
+  color: #777;
+  font-family: Oxanium;
+  width: fit-content;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.navigation > .navigation-item.active,
+.navigation > .navigation-item:hover {
+  color: white;
+  font-family: Oxanium;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* hero */
+.hero {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  height: 700px;
+  min-height: 700px;
+  position: relative;
+}
+
+.hero .hero-text .wellcome-text {
+  text-align: center;
+  color: #fff;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 26px;
+}
+
+.hero .hero-text .hero-desc {
+  margin: 0 auto;
+  color: #777;
+  max-width: 777px;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero img {
+  position: absolute;
+  max-width: 300px;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+/* who */
+.who {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  gap: 50px;
+  margin-top: 120px;
+}
+
+.who .hey {
+  max-width: 597px;
+}
+
+.who h2,
+.contact h2 {
+  color: #fff;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 44px;
+}
+
+.who .hey p,
+.who .contact p {
+  color: #fff;
+  font-family: Oxanium;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 43px;
+}
+
+.who .contact p a {
+  color: #f64d28;
+}
+
+.who .contact p a:hover {
+  filter: brightness(200%);
+}
+
+.who .contact {
+  max-width: 537px;
+}
+
+button.send-email {
+  border-radius: 12px;
+  background: #f64d28;
+  width: 100%;
+  padding: 10px 0;
+  color: #fff;
+  font-family: Oxanium;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43px;
+  border: none;
+  cursor: pointer;
+}
+
+button.send-email:hover,
+button.send-em:hover {
+  filter: grayscale(60%);
+}
+
+/* skillset */
+.skill {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.skill h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 70px;
+}
+
+.skill .skil-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 kolom per baris */
+  gap: 20px;
+}
+
+.skil-item {
+  border-radius: 12px;
+  background: #0d0d0d;
+  padding: 25px 40px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.skil-item:hover {
+  filter: brightness(150%);
+}
+
+.skil-item img {
+  width: 100px;
+  height: 100px;
+}
+
+.skil-item p {
+  color: #fff;
+  font-family: Oxanium;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* form */
+.contact-me {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.contact-me h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.form-item p {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 13px;
+  margin-top: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.form-item input,
+.form-item textarea {
+  box-sizing: border-box;
+  background: #0d0d0d;
+  outline: none;
+  border: none;
+  color: white;
+  max-width: 100%;
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.form-item textarea {
+  min-width: 100%;
+  min-height: 300px;
+  max-height: 300px;
+}
+
+.form-item input::placeholder,
+.form-item textarea::placeholder {
+  color: rgba(255, 255, 255, 0.13);
+}
+
+.btn-wrp {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+button.send-em {
+  width: 300px;
+  padding: 10px;
+  background: #f64d28;
+  padding: 10px 0;
+  font-family: Oxanium;
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43px;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+/* hr */
+hr {
+  color: white;
+  max-width: 1200px;
+  margin-top: 100px;
+}
+
+/* footer */
+
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.footer .me-social {
+  flex: 1;
+}
+
+.footer .me-social .me-s {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.me-s img {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.me-desc h5 {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  margin: 0 0 2px;
+  font-weight: 600;
+}
+
+.social-media {
+  display: flex;
+  gap: 20px;
+}
+
+.social-media div {
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.social-media div img {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.social-media div:hover {
+  background-color: #f64d28;
+}
+
+.me-desc p {
+  color: #7d7d7d;
+  font-size: 16px;
+  font-style: normal;
+  margin: 0;
+  font-weight: 400; /* 268.75% */
+}
+
+.get-in-touch {
+  flex: 1;
+}
+
+.get-in-touch .get-in {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  cursor: pointer;
+}
+
+.get-in h3 {
+  color: #fff;
+  margin: 0;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600; /* 107.5% */
+}
+
+.mycon {
+  display: flex;
+  gap: 50px;
+}
+
+.mycon .email-me {
+  flex: 1;
+}
+
+.mycon .call-me {
+  flex: 1;
+}
+
+.email-me > p,
+.call-me > p {
+  color: #7d7d7d;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.ema,
+.cal {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-bottom: 3px solid white;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.ema:hover,
+.cal:hover {
+  border-bottom: 3px solid #f64d28;
+}
+
+.ema img,
+.cal img {
+  width: 15px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.ema > p,
+.cal > p {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
+}
